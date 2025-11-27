@@ -1,0 +1,97 @@
+body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-size: cover;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+    }
+    
+    .login-box {
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 400px;
+        height: 300px;
+        border: 2px solid white;
+        backdrop-filter: blur(10px);
+    }
+    
+    .login-box h2 {
+        margin-bottom: 20px;
+        color: #2e091c; /* Dark brown color */
+    }
+    
+    .login-box input {
+        position: relative;
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 30px;
+    }
+    
+    .login-box button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        background: #8B4513; /* Dark brown color */
+        color: white;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 7%;
+    }
+    
+    .login-box button:hover {
+        background: #A0522D; /* Slightly lighter brown */
+    }
+    
+    .links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+    
+    .links a {
+        text-decoration: none;
+        color: #8B4513;
+        font-size: 12px;
+    }
+    
+    .links a:hover {
+        text-decoration: underline;
+    }
+    #background-video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        z-index: -1; /* Ensure the video is behind all content */
+        object-fit:cover; /* Makes the video cover the entire screen */
+    }
+    
+    .password-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .toggle-password {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 14px;
+        color: #666;
+    }
+    
